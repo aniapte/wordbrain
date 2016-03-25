@@ -15,9 +15,9 @@ import enchant
 # '''
 
 txt = '''
-enrd
-loco
-hbat
+----
+-nrd
+hoco
 rtre
 '''
 
@@ -70,7 +70,7 @@ def solve(grid, part, row, col, wordlen, results):
       cell = grid[row][col]
    except IndexError:
       return
-   if cell.letter == '_':
+   if cell.letter == '-':
       return
    if cell.visited:
       return      
